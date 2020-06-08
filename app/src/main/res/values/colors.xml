@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="grey">#808081</color>
+    <color name="rey">#0f0fff</color>
+    <color name="blue">#4169E1</color>
+    <color name="colorPrimary">#FF0000</color>
+    <color name="dared">#8B0000</color>
+    <color name="maroon">#800000</color>
+    <color name="tomato">#FF6347</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorAccent">#FF4500</color>
+    <color name="colorPrimaryDark">#DC143C</color>
+    <color name="india_red">#CD5C5C</color>
+
+    <color name="colorBackground">#241445</color>
+    <color name="separatorColor">#18102C</color>
+
+    <color name="pink">#FF308E</color>
+    <color name="orange">#FA9301</color>
+    <color name="yellow">#F8D411</color>
+    <color name="lblue">#20CBF3</color>
+    <color name="purple">#6F26FA</color>
+    <color name="green">#49CC56</color>
+
+    <!--These are used within FlexInput. Override to customize.-->
+    <!-- Defaults for these values are style attr and listed beside the overrides-->
+    <color name="flexInputIconColor">@color/colorPrimary</color>  <!-- colorButtonNormal -->
+    <color name="flexInputIconColorActivated">@color/colorAccent</color>  <!-- colorControlActivated -->
+    <color name="flexInputIconColorDisabled">#c03f4a54</color>  <!-- colorControlHighlight -->
+    <color name="flexInputColorHighlight">#9ae933</color>
+    <color name="flexInputDialogBackground">#A0000000</color>
+
+    <color name="content_tab_background_alpha_80">#cc222222</color>
+    <color name="highlight_alpha_50">#80222222</color>
+
+
+    <!--day-->
+
+    <!--These are used within FlexInput. Override to customize.-->
+    <!-- Defaults for these values are style attr and listed beside the overrides-->
+
+
+    <color name="colorHint">#d0808080</color>
+
+    <color name="colorAccent_alpha_50">#8032b363</color>
+
+    <color name="black_alpha_25">#20000000</color>
+
+
+    <color name="highlight_alpha_20">#80888888</color>
+
+</resources>

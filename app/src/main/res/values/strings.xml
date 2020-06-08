@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Toshiba Kantei</string>
+    <string name="have_an_account_login">Have an account?Login</string>
+    <string name="email_address">Email address</string>
+    <string name="enter_title">Enter Title</string>
+    <string name="hint_message">hint_message</string>
+    <string name="button_text">button_text</string>
+    <string name="Submit">Submit</string>
+    <string name="type">Type the following-"employee_name have initiated Apprisal</string>
+
+</resources>

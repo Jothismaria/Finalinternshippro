@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "601067976784",
+    "firebase_url": "https://finalinternshippro.firebaseio.com",
+    "project_id": "finalinternshippro",
+    "storage_bucket": "finalinternshippro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601067976784:android:9c4fe0eed59770c0d73955",
+        "android_client_info": {
+          "package_name": "com.example.finalinternshippro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "601067976784-kmrn1duoajlrj1nqpl25imbpss4c0r0s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.finalinternshippro",
+            "certificate_hash": "ca41ececf47283b70579a33ef75a4db7652b0427"
+          }
+        },
+        {
+          "client_id": "601067976784-9ol6fievkekgduk7m0r7vatkv0fbdqvt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwILc0kQmjilZpAWGMD0EgWOqCOfwe7d8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "601067976784-9ol6fievkekgduk7m0r7vatkv0fbdqvt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

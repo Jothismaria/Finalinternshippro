@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+
+    android:background="@color/india_red"
+
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/leadership_skills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="5dp"
+            android:text="Leadership Skills"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/ratingBar1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <ImageView
+            android:id="@+id/btAttachment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/ratingBar1"
+            app:layout_constraintTop_toBottomOf="@+id/leadership_skills"
+            app:srcCompat="@drawable/ic_attach_file_black_24dp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar1"
+            android:layout_width="249dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btAttachment"
+            app:layout_constraintTop_toBottomOf="@+id/leadership_skills" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.485"
+            app:layout_constraintStart_toEndOf="@+id/ratingBar1"
+            app:srcCompat="@drawable/done" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/layout1"
+        android:id="@+id/layout2">
+
+        <TextView
+            android:id="@+id/honesty_integrity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="5dp"
+            android:text="Honesty and Intigrity"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/ratingBar2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/attachment2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/ratingBar2"
+            app:layout_constraintTop_toBottomOf="@+id/honesty_integrity"
+            app:srcCompat="@drawable/ic_attach_file_black_24dp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar2"
+            android:layout_width="234dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/attachment2"
+            app:layout_constraintTop_toBottomOf="@+id/honesty_integrity" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.485"
+            app:layout_constraintStart_toEndOf="@+id/ratingBar2"
+            app:srcCompat="@drawable/done" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/layout2"
+        android:id="@+id/layout3">
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/done" />
+
+        <TextView
+            android:id="@+id/desiretolearn"
+            android:textColor="@color/white"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Desire To Learn"
+            app:layout_constraintBottom_toTopOf="@+id/ratingBar3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/attachment3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/desiretolearn"
+            app:srcCompat="@drawable/ic_attach_file_black_24dp"
+            tools:layout_editor_absoluteX="22dp"
+            tools:ignore="MissingConstraints" />
+
+        <RatingBar
+            android:id="@+id/ratingBar3"
+            android:layout_width="246dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="10dp"
+
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/desiretolearn"
+            tools:layout_editor_absoluteX="68dp"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/layout3"
+        android:id="@+id/layout4">
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.485"
+            app:srcCompat="@drawable/done" />
+
+        <TextView
+            android:id="@+id/abilitytowork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Ability To Work"
+            app:layout_constraintBottom_toTopOf="@+id/ratingBar4"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/white"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/attachment4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/ratingBar4"
+            app:layout_constraintTop_toBottomOf="@+id/abilitytowork"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/ic_attach_file_black_24dp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar4"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="72dp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+            app:layout_constraintTop_toBottomOf="@+id/abilitytowork" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/layout4"
+        android:id="@+id/layout5">
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.485"
+            app:srcCompat="@drawable/done" />
+
+        <TextView
+            android:id="@+id/attentiontodetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+
+            android:layout_marginStart="5dp"
+            android:text="Attention To Detail"
+            app:layout_constraintBottom_toTopOf="@+id/ratingBar5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/attachment5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/ratingBar5"
+            app:layout_constraintTop_toBottomOf="@+id/attentiontodetail"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/ic_attach_file_black_24dp"
+            tools:ignore="MissingConstraints" />
+
+        <RatingBar
+            android:id="@+id/ratingBar5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/attachment5"
+            app:layout_constraintTop_toBottomOf="@+id/attentiontodetail" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/Submit"
+        android:text="@string/Submit"
+        android:textColor="@color/white"
+        android:background="@color/india_red"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+  <!--  <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/layout5"
+        android:id="@+id/layout6">
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.485"
+            app:srcCompat="@drawable/done" />
+
+        <TextView
+            android:id="@+id/proactiveattitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/white"
+
+            android:text="Proactive Attitude"
+            app:layout_constraintBottom_toTopOf="@+id/ratingBar6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/attachment6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/proactiveattitude"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/ic_attach_file_black_24dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:ignore="MissingConstraints" />
+
+        <RatingBar
+            android:id="@+id/ratingBar6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintEnd_toStartOf="@+id/imageButton6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/proactiveattitude" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/layout6"
+        android:id="@+id/layout7">
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.485"
+            app:srcCompat="@drawable/done" />
+
+        <TextView
+            android:id="@+id/willingtowork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Willing To Work"
+            android:textColor="@color/white"
+
+            app:layout_constraintBottom_toTopOf="@+id/ratingBar7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/attachment7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/willingtowork"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/ic_attach_file_black_24dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:ignore="MissingConstraints" />
+
+        <RatingBar
+            android:id="@+id/ratingBar7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/willingtowork"
+            tools:layout_editor_absoluteX="60dp"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/layout7"
+        android:id="@+id/layout8">
+
+        <ImageButton
+            android:id="@+id/imageButton8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.485"
+            app:srcCompat="@drawable/done" />
+
+        <TextView
+            android:id="@+id/teamplayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Team Player"
+            app:layout_constraintBottom_toTopOf="@+id/ratingBar8"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/white"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/attachment8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/teamplayer"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_attach_file_black_24dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:ignore="MissingConstraints" />
+
+        <RatingBar
+            android:id="@+id/ratingBar8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/teamplayer"
+            tools:layout_editor_absoluteX="61dp"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+
+
+</LinearLayout>

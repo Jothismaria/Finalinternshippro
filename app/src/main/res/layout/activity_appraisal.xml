@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whiteb"
+    tools:context=".AppraisalActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/dynamic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="51dp"
+            android:textColor="@color/india_red"
+            android:text="Hi name"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/initiate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:text="Please initiate your appraisal before 01/04/2020"
+            android:textColor="@color/india_red"
+            android:textColorHighlight="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dynamic"
+            tools:ignore="MissingConstraints" />
+
+
+        <!-- <TextView
+             android:id="@+id/emp_id2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Emp id"
+             android:textColor="@color/text_black"
+             app:layout_constraintTop_toBottomOf="@id/hr"
+             app:layout_constraintBaseline_toBaselineOf="@+id/editText2"
+                 tools:layout_editor_absoluteX="16dp"
+             tools:ignore="MissingConstraints"/>
+
+
+         <EditText
+             android:id="@+id/editText2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="100dp"
+             android:layout_marginTop="20dp"
+             android:ems="10"
+             android:hint="Employee ID(HR)"
+             android:inputType="number"
+             android:textColor="@color/text_black"
+             android:textColorHighlight="@color/colorPrimaryDark"
+             app:layout_constraintLeft_toRightOf="@id/emp_id2"
+             tools:ignore="MissingConstraints"
+             tools:layout_editor_absoluteY="331dp" />
+
+         <RadioButton
+             android:id="@+id/radioButton"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Edit"
+             app:layout_constraintTop_toBottomOf="@id/emp_id2"
+             app:layout_constraintBaseline_toBaselineOf="@+id/button"
+             tools:ignore="MissingConstraints"
+             tools:layout_editor_absoluteX="35dp" />-->
+
+
+        <!-- android:hint="@string/hint_message"-->
+
+
+        <EditText
+            android:id="@+id/enddate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:hint="End Date"
+            android:inputType="date"
+
+            android:textColorHighlight="@color/colorPrimaryDark"
+            android:textColorHint="@color/india_red"
+            app:layout_constraintTop_toBottomOf="@+id/startdate"
+            tools:ignore="MissingConstraints,UnknownId"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:ems="10"
+            android:hint="name"
+
+            android:textColorHighlight="@color/colorPrimaryDark"
+            android:textColorHint="@color/india_red"
+            app:layout_constraintTop_toBottomOf="@+id/initiate"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <EditText
+            android:id="@+id/startdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+
+            android:hint="Start Date"
+            android:inputType="date"
+            android:textColorHighlight="@color/colorPrimaryDark"
+            android:textColorHint="@color/india_red"
+            app:layout_constraintTop_toBottomOf="@+id/name"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <EditText
+
+            android:id="@+id/manager_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:hint="Manager's Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/colorPrimaryDark"
+            android:textColorHint="@color/india_red"
+            app:layout_constraintTop_toBottomOf="@+id/enddate"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <Button
+            android:id="@+id/Save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="181dp"
+            android:layout_marginEnd="142dp"
+            android:textColor="@color/white"
+            android:text="Save"
+            android:background="@drawable/bg_circle_red"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints,UnknownId" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="54dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="39dp"
+            android:background="@drawable/bg_circle_red"
+            android:onClick="sendMessage"
+            android:text="@string/Submit"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/Save"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/manager_email"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
